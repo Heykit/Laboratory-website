@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>精准医疗实验室</title>
+	<meta charset="utf-8">
+	<meta name="keyword" content="血流动力学, 手术导航, 医疗大数据">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	
+	<!-- Bootstrap -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<!-- Icons -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/contact.css">
+	<script src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript">
+		function sendMail(){
+			var mailForm = document.getElementById("contactForm");
+			var address = "mailto" + document.getElementById("address").value;
+			mailForm.action = address;
+			mailForm.submit();
+		};
+	</script>
+
+	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+	
+</head>
+<body class="home">
+
+<header id="header">
+	<nav class="navbar navbar-default navbar-sticky">
+		<div class="container-fluid">
+			<div class="navbar-collapse collapse">
+				<a class="navbar-brand" href="#">
+					<img src="#" height="38" alt id="brand-img">这个地方做一个215*45大小的实验室图标（LOGO+实验室名称）
+				</a>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">首页</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">实验室概况<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="introduction.html">简介</a></li>
+							<li><a href="introduction.html">实验环境</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">学术梯队<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="person.html">实验室导师</a></li>
+							<li><a href="person.html">博士研究生</a></li>
+							<li><a href="person.html">硕士研究生</a></li>
+						</ul>
+					</li>
+					<li><a href="research.html">科学研究</a></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+			
+			</div><!--/.nav-collapse -->			
+		</div>	
+	</nav>
+
+	
+</header>
+
+    <!-- container -->
+    <div class="container" style="font-size: 15px; margin-top: 40px;">
+				<div class="row">
+					<div class="col-md-6">
+						<h3 class="contact_style">留言消息</h3>
+						<p>
+						您可以在下方的留言框中留下您的姓名和邮箱，以及简短的信息，我们将收到您的消息。
+						</p>
+						
+													<!--NOTE: Update your email Id in "contact_me.php" file in order to receive emails from your contact form-->
+		<form action="mailto:313741780@qq.com" enctype="text/plain" name="sentMessage" id="contactForm"  novalidate> 
+		<div class="control-group">
+			<div class="controls">
+				<input name="subject" type="text" class="form-control" 
+				placeholder="您的姓名" id="name" required
+				data-validation-required-message="Please enter your name" />
+				<p class="help-block"></p>
+			</div>
+		</div> 	
+		<div class="control-group">
+			<div class="controls">
+				<input name="address" type="email" class="form-control" placeholder="邮箱" 
+				id="email" required
+				data-validation-required-message="Please enter your email" />
+			</div>
+		</div> 	
+
+		<div class="control-group">
+			<div class="controls">
+				<textarea name="body" rows="10" cols="100" class="form-control" 
+				placeholder="您的留言" id="message" required
+				data-validation-required-message="Please enter your message" minlength="5" 
+				data-validation-minlength-message="Min 5 characters" 
+				maxlength="999" style="resize:none"></textarea>
+			</div>
+		</div> 		 
+		<div id="success"> </div> <!-- For success/fail messages -->
+			<button type="submit" onclick="sendMail();" class="btn btn-primary pull-right">发送</button><br />
+			</form>
+		</div>
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-6">
+					<h3>联系信息</h3>
+					<div class="contact-info">
+						<h5>地址</h5>
+						<p>上海市杨浦区军工路334号上海理工大学教育部微创工程中心</p>
+						<h5>Email</h5>
+						<p>XXXXXX@</p>
+										
+						<h5>电话</h5>
+						<p>021-88888888</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h3 >时间</h3>
+					<div class="contact-info">
+						<h5>星期一 - 星期五</h5>
+						<p>09:00 AM - 6:30 PM</p>
+										
+						<h5>星期六</h5>
+						<p>关闭</p>
+										
+						<h5>星期日</h5>
+						<p>关闭</p>
+					</div>
+				</div>
+			</div>
+			<h3>实验室坐标</h3>
+			<iframe src="map.html"  frameborder="0"  width="500px;"  height="400px;"></iframe>						
+		</div>
+	</div>
+	</div>
+    <!-- /container -->
+    <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 widget width:50%">
+				<h3 class="widget-title">关于我们</h3>
+				<div class="widget-body">
+					<p>这个地方可以写一点简短的介绍<br>
+					</p>	
+				</div>
+			</div>
+
+			<div class="col-md-3 widget width:50%">
+				<h3 class="widget-title">联系我们</h3>
+				<div class="widget-body">
+					<p>电话：021-88888888<br>
+					</p>	
+					<p>邮箱：88888888@163.com
+					</p>
+				</div>
+			</div>
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+<footer id="underfooter">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p class="text-right">
+						Copyright &copy; 2018, Your awesome name here<br> 
+					</p>
+				</div>
+			</div>
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/template.js"></script>
+</body>
+
+</html>
